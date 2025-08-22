@@ -5,21 +5,21 @@
 class Gllm < Formula
   desc "`gllm` is a powerful command-line tool designed to interact seamlessly with various Large Language Models (LLMs). Configure your API keys, set your preferred models, and start chatting or executing commands effortlessly."
   homepage ""
-  version "1.9.10"
+  version "1.9.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/activebook/gllm/releases/download/v1.9.10/gllm_Darwin_x86_64.tar.gz"
-      sha256 "d3e71299ecfcde992829debe45fbee33400d77ab37f3342d3d3cbbb67d3efe0a"
+      url "https://github.com/activebook/gllm/releases/download/v1.9.11/gllm_Darwin_x86_64.tar.gz"
+      sha256 "4c104cec216308d7f0efac01d300db2fa844dbf653e8d25400fe8563f731e776"
 
       def install
         bin.install "gllm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/activebook/gllm/releases/download/v1.9.10/gllm_Darwin_arm64.tar.gz"
-      sha256 "9af533862383926b98d0928829c13bf930167eedcdf4e8a5909a93eaf2569d20"
+      url "https://github.com/activebook/gllm/releases/download/v1.9.11/gllm_Darwin_arm64.tar.gz"
+      sha256 "8641e8b195fcc55c8e4240bd3fc8fd79318d800df0b7b8e36e3701c6fcdf0053"
 
       def install
         bin.install "gllm"
@@ -29,15 +29,15 @@ class Gllm < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/activebook/gllm/releases/download/v1.9.10/gllm_Linux_x86_64.tar.gz"
-      sha256 "07afaaa5c07b5323c4289eb74af53d84d786219e8b6bab7fb7c04c16bb72c6fa"
+      url "https://github.com/activebook/gllm/releases/download/v1.9.11/gllm_Linux_x86_64.tar.gz"
+      sha256 "a67ad688d8f4d144e3dafa1491940004ac807a93f37cfb031e1f1a8acb14a5d4"
       def install
         bin.install "gllm"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/activebook/gllm/releases/download/v1.9.10/gllm_Linux_arm64.tar.gz"
-      sha256 "6a219686e1f3b3d1036fad44e014026579224902d5240051c846e96e2318d753"
+      url "https://github.com/activebook/gllm/releases/download/v1.9.11/gllm_Linux_arm64.tar.gz"
+      sha256 "c7818f0e84b1d28431aebe85164215ee3424a6f37620aab9a01e056176c8443c"
       def install
         bin.install "gllm"
       end
