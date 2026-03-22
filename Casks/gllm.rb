@@ -3,7 +3,7 @@ cask "gllm" do
   name "gllm"
   desc "`gllm` is a powerful command-line tool designed to interact seamlessly with various Large Language Models (LLMs)."
   homepage ""
-  version "1.15.17"
+  version "1.15.18"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "gllm" do
   on_macos do
     on_intel do
       url "https://github.com/activebook/gllm/releases/download/v#{version}/gllm_Darwin_x86_64.tar.gz"
-      sha256 "2201fbd74ac143f1256599b721049c44e9789d1fda561fd6d60531324c636a54"
+      sha256 "30c7672dad0a83a31ff9fbd85fc48f8ed3a7d67b81035975d309919e69b14819"
     end
     on_arm do
       url "https://github.com/activebook/gllm/releases/download/v#{version}/gllm_Darwin_arm64.tar.gz"
-      sha256 "ce085572004df6e8f7fd910b8e280f5f72ac76bae1d115281661a3887a7c43c3"
+      sha256 "29226f438bdc51ced81055ff621bcb23b4f4c5fb76d3d574e899fc93489c3217"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/activebook/gllm/releases/download/v#{version}/gllm_Linux_x86_64.tar.gz"
-      sha256 "f486f2c105993c75902eab6b0171295a92111fd445c205683952cc6da6f0e759"
+      sha256 "95fc169107b6a91d11ba9588ef51dc6a80ab8c2a470150a6d4027004a785bcb0"
     end
     on_arm do
       url "https://github.com/activebook/gllm/releases/download/v#{version}/gllm_Linux_arm64.tar.gz"
-      sha256 "e14f91b0229144105783f212c367cd3df863aabdfa4cbdf9411219804d870c42"
+      sha256 "3279a700aa810ab724efbdde9558124172398ccbbc34c7944d901a097cc0e0df"
     end
   end
 
